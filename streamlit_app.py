@@ -40,7 +40,7 @@ else :
 ## Affichage
 st.subheader("Densité des donateurs par départements")
 st.write("Definition")
-st.write(df5 , use_container_heigth=True),use_con#tainer_width=True
+st.write(df5 , use_container_heigth=True)#,use_con#tainer_width=True
 ##
 buffer = BytesIO()
 with pd.ExcelWriter(buffer, engine = "xlsxwriter") as writer:
