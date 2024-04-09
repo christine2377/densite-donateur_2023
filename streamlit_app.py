@@ -1,6 +1,7 @@
 import warnings
 warnings.filterwarnings('ignore')
 
+import xlsxwriter
 import streamlit as st
 import pandas as pd
 from io import BytesIO
