@@ -3,6 +3,7 @@ pip install -r requirements.txt
 import warnings
 warnings.filterwarnings('ignore')
 
+import openpyxl
 import xlsxwriter
 import streamlit as st
 import pandas as pd
