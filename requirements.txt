@@ -1,6 +1,8 @@
 git+https://github.com/christine2377/densite-donateur_2023.git
 git+https://github.com/psf/requests.git
 
-pip install xlsxwriter
+$ git clone https://github.com/jmcnamara/XlsxWriter.git
+$ cd XlsxWriter
+$ python setup.py install
 
 openpyxl==3.1.2
