@@ -1,7 +1,3 @@
-git clone https://github.com/jmcnamara/XlsxWriter.git
-cd XlsxWriter
-python setup.py install
-openpyxl==3.1.2
 import warnings
 warnings.filterwarnings('ignore')
 
