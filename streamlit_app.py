@@ -43,8 +43,8 @@ else :
 
 ## Affichage
 st.subheader("Densité des donateurs par départements")
-"""Définition de densité de donateurs : 
-Nombre de foyers imposés à l'impôt sur le revenu ayant déclaré un don en 2023 sur l'ensemble des foyers imposés"""
+"Définition de densité de donateurs :" 
+"Nombre de foyers imposés à l'impôt sur le revenu ayant déclaré un don en 2023 sur l'ensemble des foyers imposés"
 df5
 ##
 buffer = BytesIO()
