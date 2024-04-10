@@ -1,3 +1,6 @@
+warnings
+pandas
+io
 streamlit
 xlsxwriter
 openpyxl==3.1.2
