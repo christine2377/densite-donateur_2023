@@ -16,8 +16,8 @@ st.title(":large_blue_diamond: Densité des donateurs en 2023")
 fl = "IR-2023-Densite_de_donateurs_par_departement_prep.xlsx"
 donateurs = pd.read_excel( fl, sheet_name = "ordre_dep")
 df = pd.DataFrame(donateurs)
-df["DENSITE"] = round(df["Densité"]*100,2)
-df = df[["DEPARTEMENTS", "DENSITE"]]
+df["DENSITE (en %)"] = round(df["Densité"]*100,2)
+df = df[["DEPARTEMENTS", "DENSITE (en %)"]]
 df1 = df.loc[0:100, :]
 moyenne = df.loc[102:102,]
 
@@ -29,7 +29,7 @@ def transformation (i : str):
 df1["DEPARTEMENTS_"]= df1["DEPARTEMENTS"].map(transformation)
 df2 = df1.merge(dep, left_on ="DEPARTEMENTS_",right_on= "NCC",how = "left", validate = "m:1")
 df3 = df2.merge(reg, on ="REG",how = "left", validate = "m:1")
-df4 = df3[["DEP","LIBELLE_x","LIBELLE_y", "DENSITE"]]
+df4 = df3[["DEP","LIBELLE_x","LIBELLE_y", "DENSITE (en %)"]]
 df4 = df4.rename(columns = {"LIBELLE_x" : "DEPARTEMENT","LIBELLE_y" : "REGION" })
 #st.write(df4, use_container_width=True)
 
