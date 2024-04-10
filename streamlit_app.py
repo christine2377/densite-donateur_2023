@@ -45,7 +45,7 @@ else :
 st.subheader("Densité des donateurs par départements")
 """**Définition de densité de donateurs**"""
 "Nombre de foyers imposés à l'impôt sur le revenu ayant déclaré un don en 2023 sur l'ensemble des foyers imposés"
-st.dataframe(df5,use_container_width = True,)
+st.dataframe(df5,use_container_width = True,hide_index = True,)
 ##
 buffer = BytesIO()
 with pd.ExcelWriter(buffer, engine = "xlsxwriter") as writer:
